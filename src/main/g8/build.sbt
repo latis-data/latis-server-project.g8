@@ -3,7 +3,8 @@ lazy val root = (project in file(".")).
   settings(
     name := "$name;format="normalized"$",
     scalaVersion := "2.11.8",
-    webappWebInfClasses := true
+    webappWebInfClasses := true,
+    containerArgs := Seq("--path", "/$name;format="normalized"$")
   )
 enablePlugins(JettyPlugin)
 
