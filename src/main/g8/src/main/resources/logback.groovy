@@ -50,5 +50,5 @@ if (logFile) {
 if (logFile) {
   root(INFO, ["DAILYFILE"])
 } else {
-  root(DEBUG, ["CONSOLE"])
+  root(INFO, ["CONSOLE"])
 }
